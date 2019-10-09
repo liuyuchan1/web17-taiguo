@@ -1,0 +1,571 @@
+body {
+    background-color: #e7e7e7;
+}
+
+header {
+    height: 0.5rem;
+    width: 8rem;
+    background-color: #ffb001;
+    margin: 0 auto;
+}
+
+header>.logo {
+    width: 1.64rem;
+    height: 0.46rem;
+    margin: 0.02rem 0.1rem;
+    border-right: 0.01rem solid #000;
+    padding-right: 0.1rem;
+
+}
+
+header>.logo2 {
+    width: 2.16rem;
+    height: 0.46rem;
+}
+
+/* 轮播图 */
+.slideBox {
+    position: relative;
+    overflow: hidden;
+    max-width: 9rem;
+    /* 设置焦点图最大宽度 */
+}
+
+.layer-inp {
+    width: 6.78rem;
+    height: 0.78rem;
+    border-radius: 0.2rem;
+    font-size: 0.24rem;
+    padding-left: 0.3rem;
+
+}
+
+.layer-icon {
+    font-size: 0.4rem;
+    color: #999;
+    position: absolute;
+    top: 0.1rem;
+    right: 0.32rem;
+}
+
+/* 小圆点 */
+.slideBox .hd {
+    position: absolute;
+    height: 7px;
+    line-height: 2px;
+    bottom: 0.3rem;
+    right: 3.95rem;
+    z-index: 1;
+    background-color: rgba(250, 251, 246, .5)
+}
+
+.slideBox .hd li {
+    display: inline-block;
+    width: 37px;
+    height: 6.5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.slideBox .hd li.on {
+    background-color: #ffa630;
+}
+
+.slideBox .bd {
+    position: relative;
+    z-index: 0;
+}
+
+.slideBox .bd li {
+    position: relative;
+    text-align: center;
+}
+
+.slideBox .bd li img {
+    vertical-align: top;
+    /* width: 100%; */
+    width: 6.4rem;
+    height: 2.22rem;
+
+}
+
+/* 轮播图 */
+
+/* 省钱玩法 */
+.row {
+    width: 8rem;
+    height: 1.54rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.rew div {
+    flex-grow: 1;
+    text-align: center;
+    width: 0;
+}
+
+.row a {
+    color: #7f7f7f;
+    font-size: 0.22rem;
+    text-decoration: none;
+    display: block;
+}
+
+.row a:before {
+    content: " ";
+    height: 0.9rem;
+    width: 0.9rem;
+    display: block;
+    margin: 0 auto;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*给每一个a标签的伪类添加背景图片*/
+.row div:nth-of-type(1) a:before {
+    background-image: url(../images/index/index-bg_05.png);
+}
+
+.row div:nth-of-type(2) a:before {
+    background-image: url(../images/index/index-bg_07.png);
+}
+
+.row div:nth-of-type(3) a:before {
+    background-image: url(../images/index/index-bg_09.png);
+}
+
+/* 省钱玩法 */
+
+/* 推荐功略 */
+.cont-move{
+    height: 1.81rem;
+    width: 8rem;
+    border-bottom: 0.01rem  solid #ddd;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.move-box{
+    padding: 0.18rem  0.13rem;
+}
+.move-box .title{
+    font-size: 0.19rem;
+}
+.move-box img{
+    height: 1.14rem;
+    width: 1.62rem;
+}
+.mt10{
+    display: flex;
+    margin-top: 0.1rem;
+    justify-content: space-between;
+}
+.font-box{
+    height: 0.66rem;
+    width: 5.99rem;
+    margin-left: 0.1rem;
+}
+.font-box p{
+    height: 0.62rem;
+    width: 100%;
+    font-size: 0.15rem;
+    color: #999;
+    /* 多行文本超出隐藏 */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+/* 文字下的左右标签 */
+.cont-link-box{
+    margin-top: 0.26rem;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+.cont-link-box span{
+    font-size: 0.15rem;
+    color: #999;
+}
+.btn{
+    width: 0.43rem;
+    height: 0.21rem;
+    border: 0.01rem solid red;
+    border-radius: 0.02rem;
+    font-size: 0.15rem;
+    color: red;
+    text-align: center;
+}
+.btn1{
+    width: 0.43rem;
+    height: 0.21rem;
+    border: 0.01rem solid #30d2bf;
+    border-radius: 0.02rem;
+    font-size: 0.15rem;
+    color: #30d2bf;
+    text-align: center;
+}
+/* 分割块 */
+.fen{
+    width: 100%;
+    height: 0.13rem;
+    background-color: #e7e7e7;
+}
+/* 旅行图 */
+.lv img{
+    width: 100%;
+    height: 5.08rem;
+}
+/* 文字描述 */
+.font-cont-box{
+    height: 1.02rem;
+    width: 100%;
+    border-bottom: 0.01rem dashed #ddd;
+    display: flex;
+    justify-items: center;
+    justify-content: center; 
+}
+.text-box{
+    padding: 0.14rem 0;
+    width: 3.07rem;
+    height: 0.68rem;
+    text-align: center;
+}
+.text-box span,.text-box p{
+    font-size: 0.17rem;
+}
+.font-b{
+    font-weight: bold;
+}
+
+/* 推荐功略 */
+
+/* 泰国自由行 */
+.liberty {
+    width: 8rem;
+    margin: 0 auto;
+}
+
+.liberty img {
+    width: 8rem;
+    height: 5.06rem;
+    margin-top: 0.1rem;
+}
+
+.liberty-box {
+    height: 1rem;
+    border-bottom: 0.01rem dashed #999;
+    background-color: #fff;
+    text-align: center;
+    font-size: 0.18rem;
+    padding-top: 0.1rem;
+
+}
+
+.liberty-i {
+    color: #ffa630;
+}
+
+/* 泰国自由行 */
+
+/* 全程自由行 */
+.whole {
+    width: 8rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.whole img {
+    width: 8rem;
+    height: 9.34rem;
+}
+
+.whole-p,
+.whole-b {
+    color: red;
+    font-size: 0.25rem;
+
+}
+
+.whole-p {
+    position: absolute;
+    top: 9rem;
+    left: 3.22rem;
+}
+
+.whole-box {
+    height: 2.04rem;
+    background-color: #fff;
+    margin-top: -0.1rem;
+}
+
+.whole-box p {
+    text-align: center;
+    font-size: 0.2rem;
+    padding-top: 0.18rem;
+    font-weight: 800;
+}
+
+.whole-wb {
+    text-align: center;
+    font-size: 0.16rem;
+    margin-top: 0.32rem;
+}
+
+.whole-wb i {
+    color: red;
+}
+
+/* 全程自由行 */
+
+/* 寻找同类人 */
+.seek {
+    width: 8rem;
+    height: 0.86rem;
+    background-color: #fedb35;
+    margin: 0 auto;
+    font-size: 0.26rem;
+    text-align: center;
+    line-height: 0.86rem;
+    color: #007adf;
+}
+
+.seek-b {
+    font-size: 0.26rem;
+}
+
+.seek-i {
+    font-size: 0.3rem;
+}
+
+/* 寻找同类人 */
+
+/* 旅行文稿、 */
+.draft {
+    height: 2.3rem;
+    width: 8rem;
+    margin: 0 auto;
+    padding: 0.1rem 0;
+    background-color: #fff;
+}
+
+.draft-box>li>img {
+    width: 1.18rem;
+    height: 0.61rem;
+    margin-left: 1.66rem;
+
+}
+
+.draft-box li {
+    width: 4rem;
+    height: 2rem;
+}
+
+.draft-fl {
+    border-right: 0.01rem dashed #999;
+}
+
+.draft-box p {
+    text-align: center;
+}
+
+.draft-p {
+    color: #999;
+    font-size: 0.16rem;
+}
+.draft-fr>img>p{
+    font-size: 0.16rem;
+}
+/* 旅行文稿、 */
+
+/* 住哪里 */
+.where {
+    width: 8rem;
+    height: 4.82rem;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: 0.1rem;
+}
+
+.where-i {
+    width: 0.42rem;
+    height: 0.42rem;
+    display: inline-block;
+    background: url(../images/index/sprite-index.png) no-repeat -0rem -0rem;
+    margin: 0.14rem 0 0 0.12rem;
+}
+
+.where-s {
+    font-weight: 800;
+    font-size: 0.18rem;
+    margin-top: 0.18rem;
+    margin-left: 0.1rem;
+}
+
+.where-img {
+    width: 7.73rem;
+    height: 3.4rem;
+    margin-left: 0.14rem;
+}
+
+.where-p {
+    font-size: 0.16rem;
+    margin-left: 0.14rem;
+}
+
+/* 住哪里 */
+.where-a {
+    width: 0.42rem;
+    height: 0.42rem;
+    display: inline-block;
+    background: url(../images/index/sprite-index.png) no-repeat -0rem -0.46rem;
+    margin: 0.14rem 0 0 0.12rem;
+}
+
+.where-b {
+    width: 0.42rem;
+    height: 0.42rem;
+    display: inline-block;
+    background: url(../images/index/sprite-index.png) no-repeat -0rem -0.98rem;
+    margin: 0.14rem 0 0 0.12rem;
+}
+
+.where-c {
+    width: 0.48rem;
+    height: 0.42rem;
+    display: inline-block;
+    background: url(../images/index/sprite-index.png) no-repeat -0rem -1.62rem;
+    margin: 0.14rem 0 0 0.12rem;
+}
+
+.where-d {
+    width: 0.48rem;
+    height: 0.42rem;
+    display: inline-block;
+    background: url(../images/index/sprite-index.png) no-repeat -0rem -2.22rem;
+    margin: 0.14rem 0 0 0.12rem;
+}
+
+.where-e {
+    width: 0.48rem;
+    height: 0.42rem;
+    display: inline-block;
+    background: url(../images/index/sprite-index.png) no-repeat -0rem -2.95rem;
+    margin: 0.14rem 0 0 0.12rem;
+}
+
+.where-f {
+    width: 0.48rem;
+    height: 0.42rem;
+    display: inline-block;
+    background: url(../images/index/sprite-index.png) no-repeat -0rem -3.7rem;
+    margin: 0.14rem 0 0 0.12rem;
+}
+
+/* 扫码 */
+.scan {
+    width: 8rem;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: 0.1rem;
+}
+
+.scan img {
+    width: 7.28rem;
+    height: 6.16rem;
+    margin-left: 0.36rem;
+}
+
+.scan-box {
+    text-align: center;
+}
+
+.scan-a {
+    font-size: 0.24rem;
+}
+.scan-c {
+    font-size: 0.16rem;
+}
+.scan-b {
+    display: inline-block;
+    width: 1.8rem;
+    height: 0.46rem;
+    background-color: #ffa630;
+    border-radius: 10%;
+    line-height: 0.46rem;
+    font-size: 0.22rem;
+}
+
+/* 扫码 */
+
+.scanss,
+.scandd {
+    width: 8rem;
+    margin: 0 auto;
+}
+
+.scanss img {
+    width: 8rem;
+    height: 3.64rem;
+}
+
+.scandd img {
+    width: 8rem;
+    height: 2.55rem;
+}
+
+
+/* 底部 */
+.foot {
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+.foot ul {
+    height: 0.9rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footar img{
+    width: 0.34rem;
+    height: 0.28rem;
+    
+}
+
+.footar{
+    text-align: center;
+}
+.footar p {
+    font-size: 0.18rem;
+}
+
+/* 顶部导航栏样式 */
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+}
+.foot-box{
+    height: 0.9rem;
+}
+.attr-box{
+    margin-top: 0.02rem;
+    background-color: #f4f4f4;
+    border-top: 0.04rem solid #f4f4f4;
+}
+/* 底部 */

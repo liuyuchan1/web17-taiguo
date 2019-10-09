@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--viewport一定要加 user-scalable 值可以是yes|no或1|0 -->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=0" />
+    <!-- 禁止将数字转为号码 -->
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 控制顶栏状态栏显示样式，可以为透明 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 添加一个网站图标，这样当你将网站添加到桌面图标时，会显示出来 -->
+    <!-- <link rel="apple-touch-icon-precomposed" href="mobile_logo.png?v1" /> -->
+    <title>移动端开发模板</title>
+    <!-- 重置样式 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/zepto.min.js"></script>
+    <script src="js/TouchSlide.1.1.js"></script>
+    <!-- 将px转rem的公式代码 -->
+    <script>
+        var w = document.documentElement.getBoundingClientRect().width;
+        //7.5是根据设计图的大小除以100，需要按照你的实际设计图换算
+        var bili = w / 9;
+        document.documentElement.style.fontSize = bili + "px";
+    </script>
+
+<body>
+    <!-- 顶部 -->
+    <header>
+        <img src="images/logo.png" alt="" class="logo">
+        <img src="images/logo_02.png" alt="" class="logo2">
+    </header>
+
+
+    <!-- 轮播图 -->
+    <div id="slideBox" class="slideBox">
+        <div class="bd">
+            <ul>
+                <li>
+                    <a class="pic" href="#"><img src="images/index/index-pic_02.jpg" /></a>
+                </li>
+                <li>
+                    <a class="pic" href="#"><img src="images/index/index-pic_36.jpg" /></a>
+                </li>
+                <li>
+                    <a class="pic" href="#"><img src="images/index/index-pic_27.jpg" /></a>
+                </li>
+                <li>
+                    <a class="pic" href="#"><img src="images/index/index-pic_30.jpg" /></a>
+                </li>
+            </ul>
+        </div>
+        <!-- 小按钮 -->
+        <div class="hd">
+            <ul></ul>
+        </div>
+    </div>
+    <!-- 轮播图 -->
+
+
+    <!-- 省钱玩法 -->
+    <div class="row">
+        <div>
+            <a href="javascript:;">省钱玩法</a>
+        </div>
+        <div>
+            <a href="javascript:;">口袋自由行</a>
+        </div>
+        <div>
+            <a href="javascript:;">咨询预定</a>
+        </div>
+
+    </div>
+
+    <!-- 省钱玩法 -->
+
+    <!-- 推荐功略 -->
+    <div class="cont-move">
+        <div class="move-box">
+            <p class="title">看完《寻梦环游记》，让我带你们去一次亡灵节</p>
+            <div class="mt10">
+                <img src="images/index/08.jpeg" alt="">
+                <!-- 文字描述 -->
+                <div class="font-box">
+                    <p>大约5年前，我家隔壁搬来了一个姓王的叔叔，王叔叔很就去了墨西哥。游荡在瓜啦达一带，倒腾银矿生意，
+                        据说发了点小财，跳广场舞的老太太都叫他王老板，因为和他传过绯闻的李奶奶从他那里来了歌舞对两台
+                    </p>
+                    <!-- 左右两边标签 -->
+                    <div class="cont-link-box">
+                        <span>11750浏览</span>
+                        <span>JOJO带你游世界</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cont-move">
+        <div class="move-box">
+            <p class="title">看完《寻梦环游记》，让我带你们去一次亡灵节</p>
+            <div class="mt10">
+                <img src="images/index/08.jpeg" alt="">
+                <!-- 文字描述 -->
+                <div class="font-box">
+                    <p>大约5年前，我家隔壁搬来了一个姓王的叔叔，王叔叔很就去了墨西哥。游荡在瓜啦达一带，倒腾银矿生意，
+                        据说发了点小财，跳广场舞的老太太都叫他王老板，因为和他传过绯闻的李奶奶从他那里来了歌舞对两台
+                    </p>
+                    <!-- 左右两边标签 -->
+                    <div class="cont-link-box">
+                        <span>11750浏览</span>
+                        <div class="btn">攻略</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- 第三个盒子 -->
+    <div class="cont-move">
+        <div class="move-box">
+            <p class="title">看完《寻梦环游记》，让我带你们去一次亡灵节</p>
+            <div class="mt10">
+                <img src="images/index/08.jpeg" alt="">
+                <!-- 文字描述 -->
+                <div class="font-box">
+                    <p>大约5年前，我家隔壁搬来了一个姓王的叔叔，王叔叔很就去了墨西哥。游荡在瓜啦达一带，倒腾银矿生意，
+                        据说发了点小财，跳广场舞的老太太都叫他王老板，因为和他传过绯闻的李奶奶从他那里来了歌舞对两台
+                    </p>
+                    <!-- 左右两边标签 -->
+                    <div class="cont-link-box">
+                        <span>11750浏览</span>
+                        <div class="btn1">问答</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 推荐功略 -->
+
+    <!-- 泰国自由行 -->
+    <div class="liberty">
+        <img src="images/index/index-pic_14.jpg" alt="">
+        <p class="liberty-box">
+            今天，我们带你走进泰国<br>
+            体验<b>不一样</b>的<i class="liberty-i">泰国自由行</i><br>
+            在这里你可以<b>花钱如女王，拍照如公主</b>
+        </p>
+    </div>
+    <!-- 泰国自由行 -->
+
+    <!-- 全程自由行 -->
+    <div class="whole">
+        <img src="images/index/index-pic_16.jpg" alt="">
+        <div class="whole-p">
+            <b class="whole-b">一分钟</b>
+            了解我们
+        </div>
+        <div class="whole-box">
+            <p>口袋自由行都 为您提供了哪些服务呢</p>
+            <div class="whole-wb">
+                <b>全程<i>自由行</i></b>，不跟团<br>
+                尊贵<b>专车、专导</b>服务<br>
+                配备<i>一辆</i>专车、<i>一名</i>领队<br>
+                还有<i>一位</i>旅游顾问<b>24小时</b>跟踪服务
+            </div>
+        </div>
+    </div>
+    <!-- 全程自由行 -->
+
+    <!-- 寻找同类人 -->
+    <div class="seek">
+        寻找<i class="seek-i">同类人</i>的<b class="seek-b">泰国旅行</b>
+    </div>
+    <!-- 寻找同类人 -->
+
+
+    <!-- 旅行文稿 -->
+    <div class="draft">
+        <ul class="draft-box clearfix">
+            <li class="draft-fl fl">
+                <img src="images/index/zan_03.png" alt="">
+                <p class="draft-p">
+                    如果您旅行的目的<br>
+                    是在最短的时间内看最多的景点<br>
+                    旅行对您来说就是下车拍照<br>
+                    上车睡觉，请绕路<br>
+                    因为我们深知旅伴的好坏<br>
+                    对一次旅行是否愉快，至关重要
+                </p>
+            </li>
+            <li class="draft-fr fr">
+                <img src="images/index/zan_05.png" alt="">
+                <p>
+                    如果您是-位有品位的旅行者<br>
+                    追求有深度的， 非填鸭式的旅行<br>
+                    有自助精神，欢迎您的加入<br>
+                    让我们一起去探索和发现<br>
+                    深度的了解当地的人文景观<br>
+                    我们一起度过快乐的泰国之旅
+                </p>
+            </li>
+        </ul>
+    </div>
+    <!-- 旅行文稿 -->
+
+    <!-- 住哪里 -->
+    <div class="where">
+        <ul class="clearfix">
+            <li class="fl"><i class="where-i"></i></li>
+            <li class="where-s fl">住哪里？</li>
+        </ul>
+        <img src="images/index/index-pic_19.jpg" alt="" class="where-img">
+        <p class="where-p">
+            经济酒店民宿客栈豪华酒店<br>
+            口袋君的安排上您的旅行充满了<br>
+            家的温馨与舒适
+        </p>
+    </div>
+    <!-- 住哪里 -->
+    <!-- 吃什么 -->
+    <div class="where">
+        <ul class="clearfix">
+            <li class="fl"><i class="where-a"></i></li>
+            <li class="where-s fl">吃什么？</li>
+        </ul>
+        <img src="images/index/index-pic_23.jpg" alt="" class="where-img">
+        <p class="where-p">
+            想吃美食?我们带您到当地人市场品尝最正宗口味<br>
+            想吃海鲜?我们带您到新鲜水产市场1楼自己买，2楼加工<br>
+            丰检由君，领队没有回扣!吃到爽歪定!
+        </p>
+    </div>
+    <!-- 吃什么 -->
+    <!-- 玩什么 -->
+    <div class="where">
+        <ul class="clearfix">
+            <li class="fl"><i class="where-b"></i></li>
+            <li class="where-s fl">玩什么？</li>
+        </ul>
+        <img src="images/index/index-pic_27.jpg" alt="" class="where-img">
+        <p class="where-p">
+            旅游顾问为您策划完美泰国自由行<br>
+            不去到此一游的旅行团景点、不发千篇一律的朋友圈<br>
+            领队带你领略真正的泰国!
+        </p>
+    </div>
+    <!-- 玩什么 -->
+    <!-- 购物吗 -->
+    <div class="where">
+        <ul class="clearfix">
+            <li class="fl"><i class="where-c"></i></li>
+            <li class="where-s fl">购物吗？</li>
+        </ul>
+        <img src="images/index/index-pic_30.jpg" alt="" class="where-img">
+        <p class="where-p">
+            泰国东西那么便宜!当然购物了!我们不去旅行团商店<br>
+            领队只会带您到当地人的市场/商场，您可以放肆shooping<br>
+            没有回扣、没有返点，买与不买完全随心!!
+        </p>
+    </div>
+    <!-- 购物吗 -->
+    <!-- 什么车 -->
+    <div class="where">
+        <ul class="clearfix">
+            <li class="fl"><i class="where-d"></i></li>
+            <li class="where-s fl">什么车？</li>
+        </ul>
+        <img src="images/index/index-pic_33.jpg" alt="" class="where-img">
+        <p class="where-p">
+            尊享专车服务，<br>
+            我们只为尊贵的您服务根据不同人数安排专车<br>
+            舒适座椅带来舒心旅途!
+        </p>
+    </div>
+    <!-- 什么车 -->
+    <!-- 多少人 -->
+    <div class="where">
+        <ul class="clearfix">
+            <li class="fl"><i class="where-e"></i></li>
+            <li class="where-s fl">多少人？</li>
+        </ul>
+        <img src="images/index/index-pic_36.jpg" alt="" class="where-img">
+        <p class="where-p">
+            我们只做私家小团队自由行<br>
+            一组队员最多14人<br>
+            如果您是大部队、且需要自由行，需要提前与旅游顾问预约哟~!
+        </p>
+    </div>
+    <!-- 多少人 -->
+    <!-- 比比看 -->
+    <div class="where">
+        <ul class="clearfix">
+            <li class="fl"><i class="where-f"></i></li>
+            <li class="where-s fl">比比看？</li>
+        </ul>
+        <img src="images/index/index-pic_39.jpg" alt="" class="where-img">
+        <p class="where-p">
+            1111
+        </p>
+    </div>
+    <!-- 比比看 -->
+
+
+    <!-- 扫码 -->
+    <div class="scan">
+        <img src="images/index/index-pic_43.jpg" alt="">
+        <ul class="scan-box">
+            <li class="scan-a">如果您还有更多旅行要求</li>
+            <li class="scan-c">方法1:保存二维码图片，打开微信扫扫</li>
+            <li class="scan-c">方法2:长按复制微信号，添加私人旅行顾问</li>
+            <li class="scan-a">微信号 <span class="scan-b">aiziyou9199</span></li>
+        </ul>
+    </div>
+
+    <div class="scanss">
+        <img src="images/index/index-bg_46.png" alt="">
+    </div>
+    <div class="scandd">
+        <img src="images/index/设计图_03.png" alt="">
+    </div>
+
+
+    <!-- 底部 -->
+    <div class="foot-box">
+        <div class="foot">
+            <ul>
+                <li class="footar">
+                    <img src="images/fnav_01_on.png" alt="">
+                    <p>首页</p>
+                </li>
+                <li class="footar">
+                    <img src="images/fnav_04.png" alt="">
+                    <p>省钱套餐</p>
+                </li>
+                <li class="footar">
+                    <img src="images/fnav_02.png" alt="">
+                    <p>微信咨询</p>
+                </li>
+                <li class="footar">
+                    <img src="images/fnav_03.png" alt="">
+                    <p>电话咨询</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
